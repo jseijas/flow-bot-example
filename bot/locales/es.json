@@ -1,0 +1,3 @@
+{
+	"Hello world {{ user.name }}": "Hola mundo {{ user.name }}"
+}

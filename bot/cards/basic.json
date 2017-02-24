@@ -1,0 +1,22 @@
+[
+  {
+    "name": "greetings",
+    "type": "text",
+    "text": "Hello world {{ user.name }}"
+  },
+  {
+    "name": "help",
+    "type": "text",
+    "text": "This is the help card"
+  },
+  {
+    "name": "menu",
+    "type": "text",
+    "text": "This is the menu card"
+  },
+  {
+    "name": "goodbye",
+    "type": "text",
+    "text": "This is the goodbye card"
+  }
+]
