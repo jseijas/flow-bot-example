@@ -105,4 +105,27 @@ server.botManager = new BotManager(opts);
 server.post('/api/messages', server.botManager.connector.listen());
 ```
 
+## Test your bot 
+
+You can use the Microsoft Bot Channel Emulator to test your bot
+
+## Define your Microsoft APP_ID and APP_PASSWORD
+
+You can set them from the environment variables BOT_APP_ID and BOT_APP_PASSWORD or pass them in the opts of the BotManager when you create the instance:
+
+```javascript
+var opts = {
+  botAppId: '<YOUR APP ID>',
+  botAppPassword: '<YOUR APP PASSWORD>',
+  defaultLocale: 'en',
+  localesPath: './bot/locales',
+  cardPath: './bot/cards',
+  actionPath: './bot/actions',
+  dialogPath: './bot/dialogs'
+};
+```
+## Accessing the Microsoft Framework bot instance and connector
+
+You can simply access the UniversalBot instance as the property "bot" and the connector as the property "connector", of the BotManager instance.
+
 
