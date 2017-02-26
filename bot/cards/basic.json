@@ -2,21 +2,69 @@
   {
     "name": "greetings",
     "type": "text",
-    "text": "Hello world {{ user.name }}"
+    "text": "Hello world {{ message.user.name }}"
   },
   {
     "name": "help",
     "type": "text",
-    "text": "This is the help card"
+    "text": "Global commands that are available anytime:\n\n* menu - Exits a demo and returns to the menu.\n* goodbye - End this conversation.\n* help - Displays these commands."
   },
   {
     "name": "menu",
-    "type": "text",
-    "text": "This is the menu card"
+    "type": "prompt",
+    "prompt": "choice",
+    "isMenu": "true",
+    "variable": "dialog.pepe",
+    "text": "What demo would you like to run?",
+    "options": [
+      { "tag": "prompts", "text": "Prompts" },
+      { "tag": "picture", "text": "Picture" },
+      { "tag": "cards", "text": "Cards" },
+      { "tag": "list", "text": "List" },
+      { "tag": "carousel", "text": "Carousel" },
+      { "tag": "receipt", "text": "Receipt" },
+      { "tag": "actions", "text": "Actions" },
+      { "tag": "endDialog", "text": "Quit" }
+    ]
   },
   {
     "name": "goodbye",
     "type": "text",
     "text": "This is the goodbye card"
+  },
+  {
+    "name": "prompts",
+    "type": "text",
+    "text": "You selected prompts"
+  },
+  {
+    "name": "picture",
+    "type": "text",
+    "text": "You selected picture"
+  },
+  {
+    "name": "cards",
+    "type": "text",
+    "text": "You selected cards"
+  },
+  {
+    "name": "list",
+    "type": "text",
+    "text": "You selected list"
+  },
+  {
+    "name": "carousel",
+    "type": "text",
+    "text": "You selected carousel"
+  },
+  {
+    "name": "receipt",
+    "type": "text",
+    "text": "You selected receipt"
+  },
+  {
+    "name": "actions",
+    "type": "text",
+    "text": "You selected actions"
   }
 ]

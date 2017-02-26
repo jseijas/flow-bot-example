@@ -1,3 +1,10 @@
-/ -> greetings, /help, logsomething(), /menu, goodbye
+/ -> greetings.card, greetings.text, logsomething(), /help, /menu, greetings.goodbye
 /help
-/menu
+/menu*
+/prompts -> prompts.text, prompts.number, prompts.choice
+/picture
+/cards
+/list
+/carousel
+/receipt
+/actions

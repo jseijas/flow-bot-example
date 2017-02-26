@@ -1,0 +1,19 @@
+[
+  {
+    "name": "greetings.card",
+    "type": "hero",
+    "title": "Microsoft Bot Framework",
+    "text": "Your bots - wherever your users are talking.",
+    "image": "http://docs.botframework.com/images/demo_bot_image.png"
+  },
+  {
+    "name": "greetings.text",
+    "type": "text",
+    "text": "Hi... I'm the Microsoft Bot Framework demo bot for Facebook. I can show you everything you can use our Bot Builder SDK to do on Facebook."
+  },
+  {
+    "name": "greetings.goodbye",
+    "type": "text",
+    "text": "Ok... See you later!"
+  }
+]

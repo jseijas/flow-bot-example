@@ -1,0 +1,24 @@
+[
+  {
+    "name": "prompts.text",
+    "type": "prompt",
+    "prompt": "text",
+    "text": "Our Bot Builder SDK has a rich set of built-in prompts that simplify asking the user a series of questions. This demo will walk you through using each prompt. Just follow the prompts and you can quit at any time by saying 'cancel'.\nPrompts.text()\n\nEnter some text and I'll say it back.",
+    "variable": "dialog.text"
+  },
+  {
+    "name": "prompts.number",
+    "type": "prompt",
+    "prompt": "number",
+    "text": "You entered '{{ dialog.text }}'\nPrompts.number()\n\nNow enter a number.",
+    "variable": "dialog.number"
+  },
+  {
+    "name": "prompts.choice",
+    "type": "prompt",
+    "prompt": "choice",
+    "text": "You entered '{{ dialog.number }}'\nBot Builder includes a rich choice() prompt that lets you offer a user a list choices to pick from. On Facebook these choices by default surface using Quick Replies if there are 10 or less choices. If there are more than 10 choices a numbered list will be used but you can specify the exact type of list to show using the ListStyle property.Prompts.choice()\n\nChoose a list style (the default is auto.)",
+    "variable": "dialog.listStyle",
+    "options": "auto|inline|list|button|none"
+  }
+]
