@@ -1,9 +1,9 @@
-/ -> greetings.card, greetings.text, logsomething(), /help, /menu, greetings.goodbye
+/ -> greetings.card, greetings.text, /help, /menu, greetings.goodbye
 /help
 /menu*
-/prompts -> prompts.text, prompts.number, prompts.choice
+/prompts -> prompts.text, prompts.number, prompts.style, prompts.choice, prompts.confirm, prompts.time, stringifytime(), prompts.attachment, replyattachments()
 /picture
-/cards
+/cards -> cards.text, cards.hero, cards.thumbnail
 /list
 /carousel
 /receipt
