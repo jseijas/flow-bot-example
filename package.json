@@ -14,7 +14,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "flow-bot-manager": "^1.0.11",
+    "@slack/client": "^3.8.1",
+    "flow-bot-manager": "^1.0.13",
     "restify": "^4.3.0"
   }
 }
