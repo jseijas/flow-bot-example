@@ -1,7 +1,7 @@
 {
   "name": "flow-bot-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Example of use of the Flow Bot Framework",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,8 +14,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@slack/client": "^3.8.1",
-    "flow-bot-manager": "^1.0.13",
+    "flow-bot": "^1.0.0",
     "restify": "^4.3.0"
   }
 }

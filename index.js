@@ -1,6 +1,5 @@
-const BotManager = require('flow-bot-manager').default;
+const FlowBot = require('flow-bot').FlowBot;
 const restify = require('restify');
-const FlowConnectorSlack = require('flow-connector').FlowConnectorSlack;
 
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
@@ -15,10 +14,5 @@ var opts = {
   dialogPath: './bot/dialogs'
 };
 
-var slack = new FlowConnectorSlack({
-  botToken: process.env.BOT_SLACK_TOKEN
-});
-
-server.botManager = new BotManager(opts);
-server.botManager.connector.addConnector('slack', slack);
-server.post('/api/messages', server.botManager.connector.listen());
+server.bot = new FlowBot(opts);
+server.post('/api/messages', server.bot.connector.listen());
